@@ -966,25 +966,125 @@ body {
   width: 100%;
 }
 
-@media (max-width: 1024px) {
-  .events {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+  .cta__bar {
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
   }
+
+  .cta__btn {
+    margin-left: 0;
+  }
+
+  .cta__center {
+    left: auto;
+    position: static;
+    transform: none;
+  }
+
+  .events {
+    grid-template-columns: 1fr;
+  }
+
+  .events-wrap {
+    gap: 10px;
+  }
+
+  .explore__grid {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(2, 258px);
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
   .explore__layout {
     flex-direction: column;
   }
+
   .explore-card--giant {
-    height: 420px;
+    flex: none;
     width: 100%;
   }
-  .explore__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .listing {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   .footer__container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 26px 0 20px;
+  }
+
+  .hero__container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+    max-width: none;
+  }
+
+  .listing {
+    grid-template-columns: 1fr;
+  }
+
+  .map__bg {
+    height: 220px;
+  }
+
+  .network {
+    padding: 36px 0;
+  }
+
+  .network__container {
+    gap: 28px;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .network__left {
+    margin: 0 auto;
+    max-width: 520px;
+  }
+
+  .network__right {
+    gap: 24px 20px;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    justify-items: center;
+    width: 100%;
+  }
+
+  .network__label {
+    max-width: 100px;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .section__container--events {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section__container--wide {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .tabs {
+    gap: 26px;
+    margin-bottom: 24px;
+  }
+
+  .tabs__tab {
+    font-size: 15px;
   }
 }
 
@@ -1261,4 +1361,5 @@ body {
     min-width: 0;
   }
 }
+
 
